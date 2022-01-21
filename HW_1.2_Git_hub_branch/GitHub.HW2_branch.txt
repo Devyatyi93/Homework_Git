@@ -1,0 +1,83 @@
+GitHub. HW_2
+создаю на гитхабе репозиторий
+в gitbash: git clone https://github.com/Devyatyi93/Git_hub_hw2_branch.git
+1. На локальном репозитории сделать ветки для:
+- Postman === git branch Postman
+- Jmeter === git branch Jmeter
+- CheckLists === git branch CheckList
+- Bag Reports === git branch Bug_Reports
+- SQL === git branch SQL
+- Charles === git branch Charles
+- Mobile testing === git branch Mobile_testing
+
+2. Запушить все ветки на внешний репозиторий === git push -u origin Postman
+=== git push -u origin Jmeter
+=== git push -u origin CheckLists
+=== git push -u origin Bug_Reports
+=== git push -u origin SQL
+=== git push -u origin Charles
+=== git push -u origin Mobile_testing
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта 
+=== touch bug_report.txt
+===vim bug_report.txt
+
+1. Описание: Приложение закрывается при делении на ноль
+2. Проект: Калькулятор
+3. Версия билда: 0.4
+4. Severity: Blocker
+5. STR: 1. Ввести любое число
+        2. Поделить на ноль
+6. Actual result: Приложение закрывается
+7. Expected result: Приложение выдает ошибку
+6. Автор: Илья
+7. Окружение: Windows 10 pro x64
+:wq
+
+4. Запушить структуру багрепорта на внешний репозиторий
+===git add.
+===git commit -m "add file bug_report.txt"
+===git push
+
+5. Вмержить ветку Bag Reports в Main
+===git checkout main
+===git merge Bug_Reports
+
+6. Запушить main на внешний репозиторий.
+===git push
+
+7. В ветке CheckLists набросать структуру чек листа.
+===git checkout CheckList
+===touch check_list.txt
+===vim check_list.txt
+
+Калькулятор
+Build: 1.4
+Environment: Windows 10 pro 64x
+Test date: 13.01.2022-14.01.2022
+Tester: Devyatkin
+
+
+Тип теста            Название проверки        Результат
+
+Smoke                из положительного        successful
+                     числа
+
+Негативый           поделить на ноль любое    error
+                    число
+
+
+:wq
+
+8. Запушить структуру на внешний репозиторий
+===git add .
+===git commit -m "add file check_list.txt
+===git push
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+
+делаю это все в гите https://github.com/Devyatyi93/Git_hub_hw2_branch.git
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+===git checkout main
+===git pull
+===git push

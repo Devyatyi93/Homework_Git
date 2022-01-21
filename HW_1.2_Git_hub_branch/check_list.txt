@@ -1,0 +1,14 @@
+Калькулятор
+Build: 1.4
+Environment: Windows 10 pro 64x
+Test date: 13.01.2022-14.01.2022
+Tester: Devyatkin
+
+
+Тип теста            Название проверки        Результат
+
+Smoke                из положительного        successful
+                     числа
+
+Негативый           поделить на ноль любое    error
+                    число
